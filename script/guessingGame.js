@@ -40,13 +40,12 @@ function myGame() {
 		}
 		for (var i = 0; i < 3 ; i++) {
 			var randomNumber = Math.floor(Math.random() * gameMaxRange + 1);
-			console.log(randomNumber)
+			//console.log(randomNumber)
 			var playerNumber = parseInt(prompt("Введіть число від 0 до " + gameMaxRange ), 10);
 			if (typeof playerNumber !== "number") {
 				alert("not a number");
 				break;
 			}
-			debugger
 			if (randomNumber === playerNumber) {
 				if (i === 0) {
 					continueGame();
